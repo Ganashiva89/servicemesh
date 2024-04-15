@@ -31,8 +31,8 @@ sudo apt-get update
 sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 
-sudo systemctl start docker
-sudo systemctl enable docker
+sudo apt install docker.io -y
+sudo systemctl enable --now docker
 
 sudo systemctl enable --now kubelet
 
